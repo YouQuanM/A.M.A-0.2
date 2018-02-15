@@ -1,0 +1,270 @@
+*{margin: 0;padding: 0;}
+.section1{
+    background-image: url("../images/第一页.png");
+    background-size: 100%;
+}
+.section2{
+    background-image: url("../images/第二页.png");
+    background-size: 100%;
+}
+.section3{
+    background-image: url("../images/第三页.png");
+    background-size: 100%;
+}
+.section4{
+    background-image: url("../images/第四页.png");
+    background-size: 100%;
+}
+div.section1{
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    /*-moz-background-size:100% 100%;*/
+}
+.top-nav > a#index-log > p{
+    color: #708090;
+    position: absolute;
+    right:0;
+    top:0;
+    padding: 20px;
+    box-shadow: -3px 3px 3px #999;
+}
+.happynewyears > p{
+    position: absolute;
+    top: 0;
+    right: 40%;
+    font-weight: bolder;
+    color: #ff001b;
+    font-size: 40px;
+    font-family: "Xingkai SC";
+}
+/*按钮*/
+/*.btn{*/
+    /*position: relative;*/
+    /*left: 70%;*/
+    /*bottom: 10%;*/
+/*}*/
+/*.btn-1{*/
+    /*position: relative;*/
+    /*display: inline;*/
+    /*opacity: 0;*/
+/*}*/
+/*.btn-2{*/
+    /*position: relative;*/
+    /*display: inline-block;*/
+    /*left: -2%;*/
+    /*opacity: 0;*/
+/*}*/
+/*.btn-3{*/
+    /*position: relative;*/
+    /*display: inline-block;*/
+    /*left: -4%;*/
+    /*opacity: 0;*/
+/*}*/
+/*.btn img{*/
+    /*width: 100px;*/
+    /*position: relative;*/
+    /*bottom: -30%;*/
+/*}*/
+.btn{
+    position: relative;
+    left: 79%;
+    width: 100px;
+    bottom: 5%;
+}
+#xxx > img{
+    position: absolute;
+    z-index: 1;
+    width: 350px;
+    left: -160px;
+    top: -200px;
+}
+.btn-1{
+    z-index: 2;
+    position: absolute;
+    display: inline;
+    opacity: 0;
+    left: 60px;
+}
+.btn-2{
+    z-index: 2;
+    position: absolute;
+    display: inline-block;
+    left: -25px;
+    opacity: 0;
+}
+.btn-3{
+    z-index: 2;
+    position: absolute;
+    display: inline-block;
+    left: -110px;
+    opacity: 0;
+}
+.btn-4{
+    z-index: 2;
+    position: absolute;
+    display: inline-block;
+    left: -25px;
+    opacity: 0;
+}
+.btn img{
+    width: 80px;
+    position: relative;
+    bottom: -30%;
+}
+/*按钮特效*/
+.timer > p{
+    display: inline;
+    color: #708090;
+}
+.timer{
+    position: absolute;
+    top:0;
+}
+.time-item{
+    display: inline;
+}
+.time-item strong {
+    color:#708090;
+    line-height:49px;
+    font-family:Arial;
+    padding:0 10px;
+    border-radius:5px;
+    box-shadow:1px 1px 3px rgba(0,0,0,0.2);
+}
+#day_show {
+    line-height:49px;
+    color:#708090;
+    margin:0 10px;
+    font-family:Arial,Helvetica,sans-serif;
+}
+.item-title .unit {
+    background:none;
+    line-height:49px;
+    padding:0 10px;
+    float:left;
+}
+
+.ArrowDown{
+    z-index: 1;
+    position: fixed;
+    left: 47%;
+    bottom: 0;
+}
+.ArrowDown > img{
+    width: 80px;
+}
+.ArrowDown > p{
+    color: whitesmoke;
+    font-size: small;
+}
+/*登录页*/
+div.login h1{
+    text-align: center;
+}
+div.login > form{
+    width: 300px;
+    margin: 30px auto;
+    border-radius: 0.4em;
+    border: 1px solid #191919;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
+}
+div.login p{
+    margin: 0 auto;
+    text-align: center;
+    padding: 5%;
+}
+div.login input{
+    margin: 0 auto;
+    display: block;
+}
+div.login input#remember{
+    display: inline;
+}
+.fp-tooltip{
+    color: #000;
+}
+/*手风琴特效section2*/
+
+/*div.row{*/
+    /*width: 1440px;*/
+/*}*/
+/*div.oc-half*/
+/*{*/
+    /*float: left;*/
+    /*width: 900px;*/
+    /*transform:skew(20deg,0deg);*/
+    /*display: inline-block;*/
+    /*overflow: hidden;*/
+    /*margin-left: -120px;*/
+/*}*/
+/*div.oc-half:last-child{*/
+    /*margin-right: 200px;*/
+
+/*}*/
+/*.img-section2{*/
+    /*transform:skew(-20deg,0deg);*/
+/*}*/
+/*#img-left{*/
+    /*margin-left: 50px;*/
+    /*width: 1200px;*/
+    /*height: 803px;*/
+/*}*/
+/*#img-right{*/
+    /*margin-left: 50px;*/
+    /*width: 1200px;*/
+    /*height: 803px;*/
+/*}*/
+
+/*game*/
+div.game{
+    opacity: 0;
+    position: relative;
+    left: 10%;
+    background: #3d3d55;
+    border: 1px solid #333333;
+    width: 200px;
+    height: 300px;
+    border-radius: 3%;
+    display: inline-block;
+}
+div.game-pic{
+    margin: 2%;
+}
+div.game-pic > img{
+    width: 190px;
+}
+p.game-introduce{
+    color: ghostwhite;
+    margin: 3%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 7;
+    overflow: hidden;
+    font-family: "Songti SC";
+}
+p#more{
+    display: inline-block;
+}
+/*页脚*/
+footer{
+    position: absolute;
+    bottom: 0;
+    height: 110px;
+    background: #333333;
+    width: 100%;
+}
+p#footer-p1{
+    color: #b6c5d4;
+    position: relative;
+    top: 50px;
+    display: inline-block;
+    left: 20%;
+}
+p#footer-p2{
+    color: #b6c5d4;
+    position: relative;
+    top: 27px;
+    left: 58%;
+}

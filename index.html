@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AMA</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.easings.min.js"></script>
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/move.js"></script>
+</head>
+<body>
+    <div id="fullpage">
+        <div class="section section1">            
+            <nav class="top-nav">
+                <div class="timer">
+                    <p>距百年老站还剩</p>
+                    <div class="time-item">
+                        <strong id="day_show">0天</strong>
+                        <strong id="hour_show">0时</strong>
+                        <strong id="minute_show">0分</strong>
+                        <strong id="second_show">0秒</strong>
+                    </div>
+                </div>
+                <div class="happynewyears">
+                    <p>新春快乐！</p>
+                </div>
+                <a href="login.html" id="index-log">
+                    <p>登录</p>
+                </a>
+            </nav>
+            <div class="btn">
+                <div class="btn-shadow">
+                    <div id="shadow1"></div>
+                    <div id="shadow2"></div>
+                    <div id="shadow3"></div>
+                    <div id="shadow4"></div>
+                </div>
+                <div id="xxx">
+                    <img src="images/xxx.png" alt="">
+                </div>
+                <div class="btn-1">
+                    <a href="">
+                        <img src="images/按钮1-1.png"/>
+                    </a>
+                </div>
+                <div class="btn-2">
+                    <a href="">
+                        <img src="images/按钮2-1.png"/>
+                    </a>
+                </div>
+                <div class="btn-3">
+                    <a href="">
+                        <img src="images/按钮3-1.png"/>
+                    </a>
+                </div>
+                <div class="btn-4">
+                    <a href="">
+                        <img src="images/按钮4-1.png"/>
+                    </a>
+                </div>
+            </div>
+            <script src="js/timeloader.js"></script>
+        </div>
+        <div class="section section2">
+            <div class="game" id="game1">
+                <div class="game-pic">
+                    <img src="images/human.jpeg" alt="">
+                </div>
+                <p class="game-introduce">在《人类一败涂地》中，并不是让玩家安放各种机关让小人触发，而是操作身处梦境中的主角bob，利用物理效果解开梦中的各种谜题，比如荡秋千、撬开铁栅栏等等，最终逃出梦境。</p>
+            </div>
+            <div class="game" id="game2">
+                <div class="game-pic">
+                    <img src="images/pk.jpg" alt="">
+                </div>
+                <p class="game-introduce">《传送门骑士/Portal Knights》是由Keen Games制作、505 Games发行的3D魔幻卡通风格沙盒冒险游戏，通过传送门在随机生成且地形独特的各个岛屿间冒险，融合动作、采集、打造元素的高自由度角色扮演游戏。</p>
+            </div>
+            <div class="game">
+                <p id="more">更多</p>
+            </div>
+        </div>
+        <div class="section section3">
+
+        </div>
+        <div class="section section4">
+            <footer>
+                <p id="footer-p1">&copy Copyright 2017-2018 ALLEN-MIKE-AOI</p>
+                <p id="footer-p2">www.liangzhicompany.com 京ICP备17072928号-1</p>
+            </footer>
+        </div>
+    </div>
+    <div class="ArrowDown">
+        <img src="images/滚动.png" alt="down">
+        <p>滚动鼠标翻页</p>
+    </div>
+    <script src="js/jquery.fullPage.js"></script>
+    <script>
+        $(function(){
+            $('#fullpage').fullpage({
+                controlArrows: true,
+                navigation: true,
+                verticalCentered: true,
+                navigationPosition: 'right',
+                navigationTooltips: ['AMA','AMA-game','gg-car','life'],
+                showActiveTooltip: true,
+                slidesNavigation: true,
+                slidesNavPosition: 'top',
+                css3: true,
+//                paddingTop: '30px',
+                fixedElements: 'header',
+                afterLoad: function (link,index) {
+                    $('.ArrowDown').fadeOut("slow",function () {
+                        $('.ArrowDown').fadeIn();
+                    });
+                    switch (index){
+                        case 1:
+                            $('.btn-1').animate({
+                                top:'-60px',
+                                opacity: '1'
+                            });
+                            $('.btn-2').animate({
+                                top:'25px',
+                                opacity: '1'
+                            });
+                            $('.btn-3').animate({
+                                top:'-60px',
+                                opacity: '1'
+                            });
+                            $('.btn-4').animate({
+                                top:'-150px',
+                                opacity: '1'
+                            });
+                            break;
+                        case 2:
+                            $('#game1').animate({
+                                top: '-63px',
+                                opacity: '1'
+                            });
+                            $('#game2').animate({
+                                top: '-56px',
+                                opacity: '1'
+                            });
+                    }
+
+                },
+            });
+        });
+    </script>
+    <script src="js/Button.js"></script>
+</body>
+</html>
